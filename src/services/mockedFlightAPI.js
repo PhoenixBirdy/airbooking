@@ -1,16 +1,19 @@
 import MOCKED_DATA from '../constants/mockedData';
+import { FETCH_MESSAGE_ERROR } from '../constants/errors';
+import { SECONDS_1 } from '../constants/common';
 
 const fetchData = () => {
   return new Promise((resolve, reject) => {
     const number = Math.random();
-    const isError = number < 1 ? false : true;
+    const isError = number < 0.7 ? false : true;
+
     setTimeout(() => {
       if (isError) {
-        reject("Can't fetch data from server! - (EMULATED ERROR 30%)");
+        reject(FETCH_MESSAGE_ERROR);
       } else {
         resolve(MOCKED_DATA);
       }
-    }, 2000);
+    }, SECONDS_1);
   });
 };
 
