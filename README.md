@@ -1,6 +1,16 @@
 # airbooking
 *It is a test for vacancy in one company*
 
+## Done
+- All is working - done!
+- Optimizations & refactoring - pending..
+
+## How to start
+1. in console of the Terminal : `git clone git@github.com:PhoenixBirdy/airbooking.git`
+2. open IDE in working directory
+3. in console of IDE: `npm install`
+4. in console of IDE: `npm start`
+
 ## Assignment:
 
 Your task is to create a web application for booking airline tickets using React. The application should simulate the functionality of ticket booking according to API data.
